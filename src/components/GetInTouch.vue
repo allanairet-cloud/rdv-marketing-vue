@@ -10,14 +10,14 @@
                         <div class="column is-half-tablet is-half-desktop">
                             <div class="field">
                                 <div class="control">
-                                    <input class="input" type="text" placeholder="Your Name">
+                                    <input class="input" type="text" placeholder="Your Name" v-model="name">
                                 </div>
                             </div>
                         </div>
                         <div class="column is-half-tablet is-half-desktop">
                             <div class="field">
                                 <div class="control">
-                                    <input class="input" type="tel" placeholder="Your Number">
+                                    <input class="input" type="tel" placeholder="Your Number" v-model="mobile">
                                 </div>
                             </div>
                         </div>
@@ -26,7 +26,7 @@
                         <div class="column">
                             <div class="field">
                                 <div class="control">
-                                    <input class="input" type="email" placeholder="Your Email">
+                                    <input class="input" type="email" placeholder="Your Email" v-model="email">
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                         <div class="column">
                             <div class="field">
                                 <div class="control">
-                                    <textarea class="textarea" placeholder="Your Message"></textarea>
+                                    <textarea class="textarea" placeholder="Your Message" v-model="message"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -43,7 +43,7 @@
                     <div class="columns submit">
                         <div class="column">
                             <div class="field">
-                                <button class="button is-primary">Send</button>
+                                <button class="button is-primary" @click.prevent="send">Send</button>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,17 @@ export default {
   name: 'GetInTouch',
   data () {
     return {
-      msg: ''
+      msg: '',
+      name: '',
+      email: '',
+      mobile: '',
+      message: ''
+    }
+  },
+  methods: {
+    send () {
+      window.Intercom('update', {'name': this.name})
+      window.Intercom('showNewMessage', this.message)
     }
   }
 }

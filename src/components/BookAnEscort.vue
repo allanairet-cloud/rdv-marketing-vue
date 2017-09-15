@@ -47,7 +47,7 @@ export default {
 .hero{
     text-align:left;
 }
-.is-primary, .is-primary:visited{
+.is-primary, .is-primary:visited, .is-primary:hover{
     border-radius: 2px;	
     background-color: #25DAC3;
     padding:18px 16px;
