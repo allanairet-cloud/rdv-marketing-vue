@@ -35,7 +35,7 @@
                     </li>
                 </ul>
                 <div>
-                    <a class="button is-primary">Book an Escort</a>
+                    <a class="button is-primary" v-bind:href="clientApp">Book an Escort</a>
                 </div>
                 <div class="iphone-for-clients is-hidden-desktop is-hidden-tablet"></div>
             </div>
@@ -54,7 +54,8 @@ export default {
   name: 'ForClients',
   data () {
     return {
-      msg: ''
+      msg: '',
+      clientApp: process.env.CLIENT_APP + '/?utm_source=rdv-marketing&utm_campaign=desktop-170421&utm_medium=button'
     }
   }
 }

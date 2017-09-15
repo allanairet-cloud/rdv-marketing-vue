@@ -13,7 +13,7 @@
                             </h2>
                         </div>
 
-                        <a class="button is-primary">Book an Escort</a>
+                        <a class="button is-primary" v-bind:href="clientApp">Book an Escort</a>
                         <div class="looking-for-clients-tablet">
                             <p>Looking for new clients? <a href="#">Become an Escort today</a></p>
                         </div>
@@ -34,7 +34,8 @@ export default {
   name: 'BookAnEscort',
   data () {
     return {
-      msg: ''
+      msg: '',
+      clientApp: process.env.CLIENT_APP + '/?utm_source=rdv-marketing&utm_campaign=desktop-170421&utm_medium=button'
     }
   }
 }
@@ -126,7 +127,7 @@ a{
 }
 @media (min-width: 768px) { 
    .app{
-        background:url(../assets/iphone-silver.png) no-repeat transparent;
+        background:url(../assets/iphone-silver-white.png) no-repeat transparent;
         height:710px;
         width:400px;
         position:absolute;

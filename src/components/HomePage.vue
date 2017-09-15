@@ -11,9 +11,9 @@
       <Testimonials></Testimonials>
       <ForAffiliates></ForAffiliates>
       <GetInTouch></GetInTouch>
-
+      <MainFooter></MainFooter>
   </div>
-  <MainFooter></MainFooter>
+ 
 </div>
 </template>
 <script>

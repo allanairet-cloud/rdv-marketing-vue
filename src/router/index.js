@@ -6,7 +6,9 @@ import 'buefy/lib/buefy.css'
 
 Vue.use(Router)
 Vue.use(Buefy)
-
+window.Intercom('boot', {
+  app_id: 'i4c1ksoj'
+})
 export default new Router({
   routes: [
     {

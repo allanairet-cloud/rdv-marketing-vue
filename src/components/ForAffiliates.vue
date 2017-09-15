@@ -59,7 +59,7 @@ export default {
           padding-left:15px;
           padding-right:12px;
           background:url(../assets/for-affiliates-background.png) no-repeat transparent;
-          background-position: center center;
+          background-position: right center;
           background-repeat: no-repeat;
           background-color: #FFF;
           padding-bottom:36px;
