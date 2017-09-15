@@ -4,8 +4,8 @@
         <h2 class="is-hidden-tablet is-hidden-desktop outer-for">Looking for clients?</h2>
          <div class="columns">
             <div class="column is-half-desktop is-half-tablet for-escorts-points">
-                <h3 class="is-hidden-mobile inner-for">For Clients</h3>
-                <h2 class="is-hidden-mobile inner-for">Finding an Escort?</h2>
+                <h3 class="is-hidden-mobile inner-for">For Escorts</h3>
+                <h2 class="is-hidden-mobile inner-for">Looking for clients?</h2>
                 <ul class="points">
                     <li>
                         <img src="../assets/safe-and-private-black.svg" alt="Rendevu is safe and private"/>
@@ -106,7 +106,7 @@ export default {
             font-size:21px;
             line-height:32px;
         }
-        .is-primary{
+        .is-primary, .is-primary:hover{
             border-radius: 2px;	
             background-color: #25DAC3;
             margin-top:45px;
@@ -182,7 +182,7 @@ export default {
             position:absolute;
             top:-10px
         }
-        .is-primary{
+        .is-primary, .is-primary:hover{
             margin-left:60px;
         }
         

@@ -141,7 +141,7 @@ export default {
             box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
             border-color:#fff;
         }
-        .is-primary{
+        .is-primary, .is-primary:hover{
             border-radius: 2px;	
             background-color: #25DAC3;
             padding:18px 53px;
@@ -180,7 +180,7 @@ export default {
             text-align:center;
             margin-bottom:64px;
         }
-        .is-primary{
+        .is-primary, .is-primary:hover{
             padding:18px 18px;
         }
     }

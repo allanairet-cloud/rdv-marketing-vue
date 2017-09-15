@@ -111,7 +111,7 @@ export default {
             font-size:21px;
             line-height:32px;
         }
-        .is-primary{
+        .is-primary, .is-primary:hover{
             border-radius: 2px;	
             background-color: #25DAC3;
             margin-top:45px;
