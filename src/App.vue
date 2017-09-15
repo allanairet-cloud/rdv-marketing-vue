@@ -14,13 +14,16 @@ export default {
 html{
   overflow-x:hidden;
 }
+body{
+  overflow:hidden;
+}
 #app {
   font-family:  proxima-nova-regular	;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  padding-top:0;
+  padding:0;
 }
 *{
   font-family: proxima-nova-regular;

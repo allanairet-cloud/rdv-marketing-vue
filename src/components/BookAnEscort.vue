@@ -20,12 +20,8 @@
                     </div>
                 </section>
             </div>
-            <div class="column is-half-tablet is-3-mobile is-one-third-desktop rendevu-app">   
-                
-                <div class="app"></div>           
-                
-            </div>
-            
+
+            <div class="app"></div>
         </div>
         <div class="looking-for-clients">
             <p>Looking for new clients? <a href="#">Become an Escort today</a></p>
@@ -59,17 +55,18 @@ export default {
 }
 .escort-row{
     margin-top:1em;
+    position:relative;
 }
 a{
     color:#3f8fec;
 }
 @media (min-width: 0) {
     .app{
-        background:url(../assets/iphone-silver-mobile.png) no-repeat transparent;
         height:280px;
         position:absolute;
         width:100%;
-        background-position:-25px 0;
+        right:-50px;
+        width:124px;
     }
     .rendevu-app{
         overflow:visible;
@@ -102,8 +99,8 @@ a{
         font-size: 16px;
         line-height: 24px;
     }
-    .escort-row{
-        background-position:0, 0;
+    .app{
+        background:url(../assets/iphone-silver-mobile.png) no-repeat transparent;
     }
     .looking-for-clients{
         margin-top:2em;
@@ -114,9 +111,6 @@ a{
     }
 }
 @media (min-width: 576px) { 
-    .app{
-        left:30px;
-    }
     .escort-row .column{
         padding-bottom:0;
     }
@@ -136,8 +130,7 @@ a{
         height:710px;
         width:400px;
         position:absolute;
-        left:-250px;
-        top:-30px
+        right:20px;
     }
     .subtitle{
         margin-bottom:48px;

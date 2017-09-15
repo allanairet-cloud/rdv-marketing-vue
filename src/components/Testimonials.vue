@@ -59,7 +59,7 @@
 import 'owl.carousel/dist/assets/owl.carousel.css'
 import 'owl.carousel'
 export default {
-  name: 'template',
+  name: 'Testimonials',
   data () {
     return {
       msg: ''
@@ -78,6 +78,9 @@ export default {
           },
           768: {
             items: 2
+          },
+          1200: {
+            items: 3
           }
         }
       })
@@ -144,6 +147,7 @@ export default {
             text-align:center;
             padding-top:37px;
             margin-bottom:16px;
+            text-transform:uppercase;
         }
         h2{
             color: #3F434D;

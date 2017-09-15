@@ -5,13 +5,13 @@
     <a class="navbar-item" href="http://bulma.io">
       <img src="../assets/logo.png" alt="Rendevu: Secure, Safe and Sure">
     </a>
-    <button class="button navbar-burger">
+    <button class="button navbar-burger" @click="toggleMenu">
       <span></span>
       <span></span>
       <span></span>
     </button>
   </div>
-  <div class="navbar-menu">
+  <div class="navbar-menu" :class="active">
     <div class="navbar-end">
       <a class="navbar-item">
         Clients
@@ -41,7 +41,14 @@ export default {
   name: 'main-navigation',
   data () {
     return {
-      msg: ''
+      isOpen: false,
+      active: ''
+    }
+  },
+  methods: {
+    toggleMenu () {
+      this.isOpen = !this.isOpen
+      this.active = this.isOpen ? 'is-active' : ''
     }
   }
 }

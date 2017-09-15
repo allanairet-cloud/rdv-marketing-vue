@@ -76,6 +76,7 @@ export default {
             text-align:center;
             padding-top:37px;
             margin-bottom:16px;
+            text-transform:uppercase;
         }
         h2{
             color: #3F434D;
